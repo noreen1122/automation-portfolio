@@ -11,3 +11,9 @@ Did: Completed Day 2 Python exercises (lists, dicts, comprehensions, JSON read/w
 Problem:
 Fixed by:
 Learned: Working with lists/dicts, comprehensions, JSON parsing/saving, normalizing Pakistani mobile numbers, and verifying code with assert
+
+## Week 1 Day 3 (2026-11-24)
+Did: Fetched live weather data from Open-Meteo API using requests in day3_weather.py, mapped WMO weather codes to readable labels, and added try/except error handling
+Problem: Hit a missing urllib3 dependency inside .venv during initial run
+Fixed by: Reinstalled requests/dependencies inside .venv and verified live output
+Learned: Sending GET requests with params and timeout, parsing JSON responses, mapping codes with dict.get(), and handling request errors safely

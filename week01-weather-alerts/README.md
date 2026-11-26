@@ -32,3 +32,11 @@ python main.py --cities Lahore Karachi Islamabad
 - How to separate configuration/secrets into `.env` while keeping `.env.example` and ignoring `.env` in Git
 - How to handle transient network/server errors with timeouts, retries, and exponential back-off (`2s`, `4s`, `8s`)
 - How to use structured `logging` and handle missing/invalid inputs cleanly without crashing the loop
+## Example output
+
+2026-11-26 12:33:44,967 INFO weather_alerts: Lahore: 3 days fetched
+2026-11-26 12:33:46,815 INFO weather_alerts: Karachi: 3 days fetched
+2026-11-26 12:33:49,022 INFO weather_alerts: Islamabad: 3 days fetched
+2026-11-26 12:33:50,742 INFO weather_alerts: Atlantis: 3 days fetched
+Saved 12 rows to weather_20261126.csv
+RAIN Atlantis 2026-11-28: 65% chance, 0.9 mm

@@ -13,7 +13,14 @@ Fixed by:
 Learned: Working with lists/dicts, comprehensions, JSON parsing/saving, normalizing Pakistani mobile numbers, and verifying code with assert
 
 ## Week 1 Day 3 (2026-11-24)
-Did: Fetched live weather data from Open-Meteo API using requests in day3_weather.py, mapped WMO weather codes to readable labels, and added try/except error handling
-Problem: Hit a missing urllib3 dependency inside .venv during initial run
-Fixed by: Reinstalled requests/dependencies inside .venv and verified live output
-Learned: Sending GET requests with params and timeout, parsing JSON responses, mapping codes with dict.get(), and handling request errors safely
+
+Did: Built day3_first_call.py for 3-day daily forecasts and row conversion via enumerate, tested Open-Meteo geocoding lookup, and built day3_forecast.py to write a 9-row forecast.csv for Lahore, Karachi, and Islamabad; added *.csv to .gitignore
+Problem: Encountered a missing urllib3 dependency in .venv initially and tested city lookup edge cases
+Fixed by: Reinstalled requests/dependencies in .venv and verified all 9 forecast rows in forecast.csv
+Learned: HTTP requests, query params, status codes, JSON parsing, parallel lists to row dicts with enumerate, geocoding APIs, and writing CSVs with csv.DictWriter
+
+## Week 1 Day 4 (2026-11-26)
+Did: Built reusable http_client.py with timeouts, retryable status filtering, and exponential backoff; configured .env and .env.example with python-dotenv; created day4_weather_alerts.py with structured logging and missing-city ValueError handling; tested offline/Wi-Fi-off behavior
+Problem: Verified that missing/unknown city names fail lookups and offline networks raise NameResolutionError/ConnectionError
+Fixed by: Raised ValueError("City not found: ...") and caught it in the city loop so other cities continue, while retrying transient errors with 2s/4s back-off and logging clear errors
+Learned: Timeout discipline, retrying only transient errors (429/5xx/network), exponential back-off, structured logging instead of print, and keeping secrets/settings in .env while committing .env.example

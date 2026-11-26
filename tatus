@@ -1,0 +1,8 @@
+*   [33m5d48318[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Merge pull request #1 from noreen1122/feature/project-readme
+[31m|[m[32m\[m  
+[31m|[m * [33md6fc4ed[m[33m ([m[1;31morigin/feature/project-readme[m[33m)[m Add README for weather alerts project
+[31m|[m[31m/[m  
+* [33m61af048[m Complete Day 4 retries, logging, env config, and error handling
+* [33ma95a948[m Complete Day 3 weather APIs and CSV forecast export
+* [33mcc1beab[m Day 3 weather API integration
+* [33m38551d3[m Day 2 python exercises

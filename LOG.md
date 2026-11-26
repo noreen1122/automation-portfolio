@@ -31,3 +31,9 @@ Problem: Needed a clean team workflow where main stays stable and documentation 
 Fixed by: Used feature branch + Pull Request review/merge flow and documented setup, run command, example output, architecture, and lessons learned in README.md
 Learned: Feature branch workflow, pull request review, concise imperative commit messages, and writing clear project READMEs
 
+
+## Week 1 Day 6 (2026-11-26)
+Did: Built modular City Weather & Alert Script across http_client.py, weather.py, report.py, and main.py; added unit tests in test_report.py (2 passed with pytest -q); updated README.md with real CLI output
+Problem: Needed clean separation of concerns, CLI options (--cities, --days, --out), dynamic CSV output (weather_YYYYMMDD.csv), threshold alerts, and offline-testable rules
+Fixed by: Separated API fetching (weather.py), alert/CSV logic (report.py), and CLI/env orchestration (main.py), then verified with pytest and git check-ignore
+Learned: Modular architecture, separation of concerns, argparse CLI design, CSV DictWriter export, and unit testing pure functions with pytest
